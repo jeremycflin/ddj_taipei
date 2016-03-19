@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Last Mile</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+		<link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
+   		<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+  </head>
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<style>
+	.slides{
+		font-family: "蘋果麗中黑" !important;
+	}
+
+	h1 {
+		font-family: "華文細黑" !important;
+	}
+
+	img{
+		border:0px !important;
+	}
+
+	.margin-fixeds{
+		margin-top: -0px !important;
+	}
+
+	#goodEx{
+		margin-left: 30px;
+	}
+
+/*	h1,h2{
+		color:#dda61d !important;
+	}
+*/
+/*	p small{
+		margin-bottom: -20px !important;
+	}*/
+
+	</style>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>數據新聞與資料視覺化</h1>
+					<p><small>林辰峰 Jeremy C.F. Lin</small></p>
+				</section>
+
+				<section>
+					<h3>我是誰？</h3>
+					<a href="http://jeremycflin.github.io/" target="blank">
+						<img  data-src="assets/jeremy.jpg" height="400px">
+					</a>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+		
+					<section>
+						<h3>什麼是資料視覺化</h3>
+						<img  data-src="http://rharrisblog.com/wp-content/uploads/2011/10/confusing-tech-language.jpg" height="400px">
+					</section>
+					<section>
+						<h3>哪個是資料視覺化</h3>
+						<img  data-src="http://www.jeffbullas.com/wp-content/uploads/2012/03/9-Awesome-Reasons-to-Use-Infographics-in-your-Content-Marketing-v21.jpg" height="400px">
+						<img  data-src="assets/goodex.png" height="400px" width="400px" id="goodEx">
+					</section>
+	
+					<section>
+						<h3>利用視覺元素編碼</h3>
+						<img  data-src="assets/alltype.png" height="600px" >
+					</section>
+					<section>
+						<h3>不過視覺元素也有不同的精準度</h3>
+						<img  data-src="assets/rank.png" height="600px" >
+					</section>
+					<section>
+						<h3>不相信我？</h3>
+						<img  data-src="https://media.giphy.com/media/TaFTuXWTJf2iA/giphy.gif" height="400px" >
+					</section>
+		
+					<section>
+						<h3>哪個比較清楚？</h3>
+						<p><small>Area VS line (aligned)</small></p>
+						<img  data-src="assets/vs1.png" height="400px">
+					</section>
+
+					<section>
+						<h3>哪個比較清楚？</h3>
+						<p><small>Area, angle, color intensity VS line (aligned)</small></p>
+						<img  data-src="assets/vs2.png" height="400px">
+					</section>
+					<section>
+						<h3>如何用視覺呈現數據</h3>
+						<p><small>首先，先想想你到底想要呈現什麼？</small></p>
+						<img  data-src="assets/whattoshow.jpg" height="400px">
+					</section>
+	
+					<section>
+						<h3>對比</h3>
+						<p><small>長條圖很適合用來做簡單的比較，此外，在這個圖內設計者還加上顏色來強調誰領了最多錢</small></p>
+						<img  data-src="assets/goodbar.jpg" height="550px">
+					</section>
+					<section>
+						<h3>對比</h3>
+						<p><small>長條圖雖然很好用，但是還是有要注意的地方</small></p>
+						<img  data-src="assets/badbar.png" height="500px">
+					</section>
+					<section>
+						<h3>對比: 經過時間</h3>
+						<p><small>基本上來說，如果數據因為時間而變動的都很適合用線圖</small></p>
+						<img  data-src="assets/goodline.png" height="500px">
+					</section>
+					<section>
+						<h3>對比: 經過時間</h3>
+						<p><small>當你想要呈現多組系列時，線圖通常比長條圖好</small></p>
+						<img  data-src="assets/multiline.png" height="500px">
+					</section>
+					<section>
+						<h3>對比: 經過時間</h3>
+						<p><small>尤其當你想要呈現多群組時，線圖真的還不賴</small></p>
+						<img  data-src="assets/manylines.png" height="500px">
+					</section>
+					<section>
+						<h3>對比: 經過時間</h3>
+						<p><small>設計得好，線圖也可以長得很sexy</small></p>
+						<img  data-src="assets/whale.png" height="550px">
+					</section>
+					<section>
+						<h3>對比: 經過時間</h3>
+						<p><small>設計得差，線圖也可以長得很糟糕</small></p>
+						<img  data-src="assets/badline.png" height="550px">
+					</section>
+					<section>
+						<h4>小圖對比, 並經過時間</h4>
+						<p><small>當你想要一次比較很多種東西時, 小圖對比是一個好選擇</small></p>
+						<img  data-src="assets/smallmultiple.jpg" height="550px">
+					</section>
+					<section>
+						<h3>組成：什麼的一部分</h3>
+						<!-- <p><small>設計得差，線圖也可以長得很糟糕</small></p> -->
+						<img  data-src="assets/compo.png" height="550px">
+					</section>
+					<section>
+						<h3>組成：什麼的一部分</h3>
+						<!-- <p><small>設計得差，線圖也可以長得很糟糕</small></p> -->
+						<img  data-src="assets/compo2.png" height="550px">
+					</section>
+					<section>
+						<h3>組成：經過時間</h3>
+						<!-- <p><small>設計得差，線圖也可以長得很糟糕</small></p> -->
+						<img  data-src="assets/compo3.png" height="550px">
+					</section>
+					<section>
+						<h3>相連性: 相連性關係圖</h3>
+						<!-- <p><small>設計得差，線圖也可以長得很糟糕</small></p> -->
+						<img  data-src="assets/connect.png" height="550px">
+					</section>
+					<section>
+						<h3>位置</h3>
+						<img  data-src="assets/flint.png" height="550px">
+					</section>
+					<section>
+						<h3>位置: Choropleth</h3>
+						<img  data-src="assets/map.png" height="550px">
+					</section>
+					<section>
+						<h3>位置: Choropleth</h3>
+						<p>好處:</p>
+						<ul>
+						<li>展示統計標準化後的每個位置的不同處</li>
+						<!-- <li>Highlighting areas</li> -->
+						</ul>
+						<p>常犯錯誤:</p>
+						</ul><li>如果地域太小就很難比對</li>
+						<li> 讀者有時候容易誤解</li>
+						<li>完全忘記要做統計標準化</li></ul>
+					</section>
+					<section>
+						<h3>位置: Choropleth</h3>
+						<img  data-src="assets/badmap.png" height="550px">
+					</section>
+					<section>
+						<h3>位置: Proportional circles</h3>
+						<img  data-src="assets/dotmap.png" height="550px">
+					</section>
+					<section>
+						<h3>位置: Proportional circles</h3>
+						<p>好處:</p>
+						<ul>
+						<li>精準地展示數據範圍 </li>
+						<!-- <li>Geographies of varying sizes</li> -->
+						<li>不用做統計標準化，直接用原始數據即可</li>
+						</ul>
+						<p>常犯錯誤:</p>
+						</ul><li>一般讀者有時候看不懂</li>
+						<li>完全變成人口數量圖</li>
+						<li>如果沒有變化的話其實有時候看起來滿無聊的</li></ul>
+					</section>
+					<section>
+						<h3>位置: 熱圖</h3>
+						<img  data-src="assets/heat.png" height="550px">
+					</section>
+					<section>
+						<h3>位置: Proportional circles</h3>
+						<p>好處:</p>
+						<ul>
+						<li>Showing concentrations</li>
+						<li>Emphasizing the data, when data doesn't match existing boundaries</li>
+						</ul>
+						<p>常犯錯誤:</p>
+						</ul><li>Make sure colors and breaks are meaningful and thought out </li>
+					</section>
+					<section>
+						<h3>Location: Dot maps</h3>
+						<img  data-src="assets/dots.png" height="550px">
+					</section>
+					<section>
+						<h3>Location: Dot maps</h3>
+						<p>Good for:</p>
+						<ul>
+						<li>Showing density and distribution</li>
+						<li>Geography that can not be easily grouped</li>
+						<li>Showing single incidents or events</li>
+						<li>If exact coordinates are important to your map </li>
+						</ul>
+						<p>Common mistakes:</p>
+						</ul><li>Overlapped dots</li>
+					</section>
+					<section>
+						<h3>Maps don't have to be maps</h3>
+						<img  data-src="assets/notmap.jpg" height="550px">
+					</section>
+					<section>
+						<h3>Interactions</h3>
+						<img src="http://media.giphy.com/media/IV2DvTArF5b9u/giphy.gif" width="480" height="480" alt="meltdown" >
+					</section>
+					<section>
+						<h3>Interactions</h3>
+						<ul>
+						<li>If you make the reader click or do anything other than scroll, something spectacular has to happen</li>
+						<li> If you make a tooltip or rollover, assume no one will ever see it. If content is important for readers to see, don't hide it</li>
+						<li>When deciding whether to make something interactive, remember that getting it to work on all platforms is expensive</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Annotations</h3>
+						<ul>
+						<li>If you make the reader click or do anything other than scroll, something spectacular has to happen</li>
+						<li> If you make a tooltip or rollover, assume no one will ever see it. If content is important for readers to see, don't hide it</li>
+						<li>When deciding whether to make something interactive, remember that getting it to work on all platforms is expensive</li>
+						</ul>
+					</section>
+
+					
+					
+					
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
